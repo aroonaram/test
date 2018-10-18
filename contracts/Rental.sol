@@ -1,9 +1,9 @@
 pragma solidity ^0.4.24;
 
-contract Adoption{
+contract Rental{
 
 address[16] public adopters;
-// Adopting a pet
+// Renting an item 
 function adopt(uint petId) public returns (uint) {
   require(petId >= 0 && petId <= 15);
 
